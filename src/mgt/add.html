@@ -37,12 +37,14 @@
 
 		<div class="target">
 		
-		<form action="/fileUploader" enctype="multipart/form-data" method="post">
-			 <input type="file" accept="application/pdf"/>
+		<form action="/fileUploader/fileStore" enctype="multipart/form-data" method="post">
+			 <input name="processId" type="hidden" value="HOMEWORK-123456789"/>
+			 <input name="systemId" type="hidden" value="HOMEWORK"/>
+			 <input name="file" type="file" accept="application/pdf"/>
 			 <input type="submit" value="提交">
 		</form>
 			
-		// test _netrc
+	
 
 		</div>
 
