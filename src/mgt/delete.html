@@ -19,10 +19,6 @@
 		.task-list > *:hover{
 			background-color: gray;
 		}
-
-		.tool > a{
-		   margin-right: 8px; 
-		}
 	
 	</style>
 	
@@ -32,26 +28,21 @@
   <div class="container task-manage">
 
 		<div class="tool">
-			<a href="mgt/add.html"> Add </a>
-			<a href="mgt/edit.html"> Edit </a>
-			<a href="mgt/delete.html"> Delete </a>
+			<a> Back </a>
+
 		</div>
 		
-		<ol class="task-list">
-			  <li>
-				<input type="checkbox"></>
-				Task-001: task 001
-			  </li>
-			  <li>
-				<input type="checkbox"></>
-				Task-002: task 002
-			  </li>
-			  
-		</ol>
+		
     
 
-		<div class="working-area">
-
+		<div class="target">
+		
+		<form action="/fileUploader" enctype="multipart/form-data" method="post">
+			 <input type="file" accept="application/pdf"/>
+			 <input type="submit" value="提交">
+		</form>
+			
+		// test _netrc
 
 		</div>
 
