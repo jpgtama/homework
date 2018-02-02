@@ -31,24 +31,30 @@
 			<a> Back </a>
 
 		</div>
-		
-		
-    
 
-		<div class="target">
-		
-		<form action="/fileUploader/fileStore" enctype="multipart/form-data" method="post">
-			 <input name="processId" type="hidden" value="HOMEWORK-123456789"/>
-			 <input name="systemId" type="hidden" value="HOMEWORK"/>
-			 <input name="file" type="file" accept="application/pdf"/>
-			 <input type="submit" value="提交">
-		</form>
-			
-	
+		<div class="select-task-type">
+
+		        <div>Task Type:
+		          <select name="taskType">
+			    <option value="pdf-read">PDF read</option>
+			    <option value="movie-read">Movie read</option>
+			    <option value="write-per-day">Write per day</option>
+			  </select>
+			</div>
+
+			<div>File Source:
+			  <ul>
+			    <li>
+ 			      <label><input type="radio" name="fileSource" value="ExistingInDB"/>Existing In DB</label>
+			    </li>
+			    <li>
+ 			      <label><input type="radio" name="fileSource" value="Upload"/>Upload</label>
+			    </li>
+			</div>
 
 		</div>
 
-
+		<a href="#">Next Step</a>
 
 
 

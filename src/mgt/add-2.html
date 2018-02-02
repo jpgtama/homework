@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEWORK - Task Manage</title>
+    <script src="js/lib/react.js"></script>
+    <script src="js/lib/react-dom.js"></script>
+    <script src="js/lib/babel.min.js"></script>
+	
+	<style>
+		
+	
+		
+		.task-list > *{
+			cursor: pointer;
+			
+		}
+		
+		.task-list > *:hover{
+			background-color: gray;
+		}
+	
+	</style>
+	
+</head>
+<body>
+
+  <div class="container task-manage">
+
+		<div class="tool">
+			<a> Back </a>
+
+		</div>
+		
+		
+    
+
+		<div class="target">
+		
+		<form action="/fileUploader/fileStore" enctype="multipart/form-data" method="post">
+
+		        <input name="systemId" type="hidden" value="HOMEWORK"/>
+		        <input name="processId" type="hidden" value="HOMEWORK-123456789"/>
+			<input name="taskId" type="hidden" value=""/>
+
+		        <span>Task Type:</span>
+		        <select name="taskType">
+			   <option value="pdf-read">PDF read</option>
+			   <option value="movie-read">Movie read</option>
+			   <option value="write-per-day">Write per day</option>
+	   
+			</select>
+			<br/>
+
+
+			 
+			 <span>Select File:</span>
+			 <input name="file" type="file" accept="application/pdf"/>
+			 <br/>
+			 
+			 <span>Page(From, To):</span>
+			 <input name="pageFrom" type="number"/><input name="pageTo" type="number"/>
+
+			 <div>One Page every 
+			   <input name="pageSizeEvery" type="number" value="1"/>
+			   <select name="pageEveryUnit">
+			     <option value="Day" selected="selected">Day</option>
+			     <option value="Week">Week</option>
+			   </select>
+			 </div>
+
+			 <br><span>Next Task Begin:</span><br/>
+			 <ul>
+			    <li>
+			        <input name="nextTaskBegin" type="radio" value="waitComplete" />
+			        <label>Wait complete</label>
+			    </li>
+			    <li>
+			        <input name="nextTaskBegin" type="radio" value="noWait"/>
+			        <label>No Wait</label>
+			    </li>
+			 </ul>
+
+			 <br/><br/>
+			 <input type="submit" value="提交">
+		</form>
+			
+	
+
+		</div>
+
+
+
+
+
+    </div>
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div id="root"></div>
+   
+</body>
+</html>
