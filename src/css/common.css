@@ -1,0 +1,12 @@
+.wrapper{
+  text-align: center;
+}
+
+.container{
+  width: 600px;
+  display: inline-block;
+}
+
+.left-align{
+  text-align: left;
+}
